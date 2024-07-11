@@ -46,3 +46,16 @@ body{
 .links a:hover{
     color: #7db3e4;
 }
+.about{
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .about-text{
+    text-align: center;
+    font-size: 22px;
+    line-height: 35px;
+    font-family: sans-serif;
+    width: 55%;
+}
