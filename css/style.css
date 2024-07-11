@@ -14,7 +14,7 @@ body{
 
 .main{
     margin-top: 35px;
-    height: 90vh;
+    height: 150vh;
     width: 90%;
     background-color: white;
 }
@@ -58,4 +58,47 @@ body{
     line-height: 35px;
     font-family: sans-serif;
     width: 55%;
+}
+
+.projects {
+    margin-top: 20px;
+}
+
+.projects .project-box{
+    display: grid;
+    gap: 16px; 
+    padding: 16px; 
+    grid-template-columns: repeat(3, 1fr); 
+    position: relative;
+    top: 60px;
+    place-items: center;
+}
+
+.projects .project-head{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+img{
+    height: 305px;
+    width: 305px;
+    object-fit: contain;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .projects .project-box {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for large screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects .project-box {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
 }
