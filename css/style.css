@@ -15,7 +15,7 @@ body{
 
 .main{
     margin-top: 35px;
-    height: 153vh;
+    height: 215vh;
     width: 90%;
     background-color: white;
 }
@@ -65,12 +65,24 @@ body{
     margin-top: 20px;
 }
 
-.projects .project-box{
+.box {
+    height: 54vh;
+    width: 70%;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.projects .project-box {
     display: grid;
     gap: 16px; 
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
     position: relative;
-    top: 60px;
+    top: 80px;
     place-items: center;
 }
 
@@ -82,8 +94,8 @@ body{
     font-family: sans-serif;
 }
 .box img{
-    height: 310px;
-    width: 310px;
+    height: 350px;
+    width: 350px;
     object-fit: contain;
 }
 .box img:hover{
@@ -94,12 +106,14 @@ body{
     display: flex;
     gap: 10px;
     align-items: center;
+    text-align: left;
 }
 .box-head a{
     color: black;
     font-family: sans-serif;
     font-size: 22px;
 }
+
 .box-head a:hover{
     color: #7db3e4;
 }
