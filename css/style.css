@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: .4s;
 }
 
 body{
@@ -17,8 +18,9 @@ body{
 .main{
     margin-top: 35px;
     height: 217vh;
-    width: 90%;
-    max-width: 90%;
+    /* max-height: 1690px; */
+    /*width: 90%;*/
+    max-width: 1200px;
     background-color: white;
 }
 
@@ -138,7 +140,7 @@ body{
         grid-template-columns: repeat(2, 1fr);
     }
     .main{
-        height: 245vh;
+        height: 217vh;
     }
     .main .header {
         flex-direction: column;
@@ -160,7 +162,7 @@ body{
     }
 
     .main{
-        height: 405vh;
+        height: 350vh;
     }
     .main .header {
         flex-direction: column;
