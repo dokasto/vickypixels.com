@@ -11,11 +11,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 .main{
     margin-top: 35px;
-    height: 215vh;
+    height: 217vh;
     width: 90%;
     background-color: white;
 }
@@ -124,7 +125,6 @@ body{
 .box-foot p {
     font-family: sans-serif;
     margin-top: 12px;
-    margin-bottom: 40px;
 }
 
 
