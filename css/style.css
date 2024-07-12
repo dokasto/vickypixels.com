@@ -17,8 +17,8 @@ body{
 
 .main{
     margin-top: 35px;
-    height: auto;
     max-width: 1200px;
+    min-height: 1000px;
     background-color: white;
 }
 
