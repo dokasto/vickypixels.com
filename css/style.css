@@ -12,35 +12,51 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    font-family: sans-serif;
 }
 
 .main{
+    display: block;
+    box-sizing: border-box;
     margin-top: 35px;
     max-width: 1200px;
-    min-height: 1000px;
+    min-width: 300px;
+    width: 90%;
+    padding: 8px;
     background-color: white;
 }
 
 .main .header {
-    height: 13vh;
-    padding: 30px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #7db3e4;
+
 }
 
-.header .logo h1 {
+
+.header h1 {
+    margin: 0;
+    padding: 0;
     font-family: "Italiana", sans-serif;
     font-size: 45px;
     cursor: pointer;
+    display: inline-block;
 }
 
+.main .divide {
+    background-color: #7db3e4;
+    height: 2px;
+    margin-top: 20px;
+}
+
+
 .links a{
+    margin-left: 12px;
+    padding: 0;
     text-decoration: underline;
     color: black;
-    margin-right: 55px;
     font-size: 18px;
     font-family: sans-serif;
     cursor: pointer;
@@ -49,57 +65,59 @@ body{
 .links a:hover{
     color: #7db3e4;
 }
+
 .about{
     margin-top: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} 
+
 .main .about-text{
     text-align: center;
     font-size: 22px;
-    line-height: 35px;
+    line-height: 1.2;
     font-family: sans-serif;
-    width: 55%;
+    max-width: 400px;
 }
 
 .projects {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.project-head{
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.projects .project-box {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-between;
 }
 
 .box {
-    height: 54vh;
-    width: 70%;
-    padding-left: 5px;
-    padding-right: 5px;
-    display: flex;
+    width: 400px;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-
-.projects .project-box {
-    display: grid;
-    gap: 16px; 
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
-    position: relative;
-    top: 80px;
-    place-items: center;
-}
-
-.projects .project-head{
-    text-align: center;
-    position: relative;
-    top: 50px;
-    font-size: 14px;
-    font-family: sans-serif;
+    margin: 12px;
 }
 .box img{
     height: 350px;
     width: 350px;
     object-fit: contain;
 }
+
+
 .box img:hover{
     transform: scale(1.1);
     transition: .6s;
@@ -127,70 +145,5 @@ body{
 .box-foot p {
     font-family: sans-serif;
     margin-top: 12px;
-}
+} 
 
-
-
-
-
-@media (max-width: 1200px) {
-    .projects .project-box {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .main{
-        height: 217vh;
-    }
-    .main .header {
-        flex-direction: column;
-        height: 20vh;
-    }
-    .links a{
-        position: relative;
-        top: 12px;
-    }
-    .box img{
-        height: 280px;
-        width: 280px;
-    }
-}
-
-@media (max-width: 768px) {
-    .projects .project-box {
-        grid-template-columns: 1fr;
-    }
-
-    .main{
-        height: 350vh;
-    }
-    .main .header {
-        flex-direction: column;
-        height: 16vh;
-    }
-    .header .logo h1{
-        font-size: 30px;
-    }
-    .links a{
-        font-size: 10px;
-        margin-right: 12px;
-        margin-top: 5px;
-    }
-
-    .main .about-text{
-        font-size: 16px;
-        width: 70%;
-        line-height: 30px;
-    }
-    .main .project-head{
-        font-size: 10px;
-        margin-bottom: 15px;
-    }
-    .box{
-        width: 100%;
-        font-size: 14px;
-    }
-    .box img{
-        height: 270px;
-        width: 270px;
-    }
-   
-}
