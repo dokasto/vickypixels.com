@@ -17,9 +17,7 @@ body{
 
 .main{
     margin-top: 35px;
-    height: 217vh;
-    /* max-height: 1690px; */
-    /*width: 90%;*/
+    height: auto;
     max-width: 1200px;
     background-color: white;
 }
