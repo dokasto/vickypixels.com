@@ -83,6 +83,26 @@ body{
     margin-bottom: 15px;
 }
 
+.about-text img {
+    height: 40px;
+    width: 40px;
+}
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.wave-hand {
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation: wave 2s infinite;
+}
 .projects {
     margin-top: 20px;
     display: flex;
@@ -169,5 +189,9 @@ body{
     .box img{
         height: 250px;
         width: 250px;
+    }
+    .about-text img {
+        height: 20px;
+        width: 20px;
     }
 }
