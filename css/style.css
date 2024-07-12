@@ -149,3 +149,25 @@ body{
     margin-top: 12px;
 } 
 
+@media (max-width: 768px){
+    .header h1{
+        position: relative;
+        left: 12px;
+    }
+    .links a {
+        font-size: 14px;
+        position: relative;
+        top: 15px;
+    }
+    .about-text p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .project-head {
+        font-size: 10px;
+    }
+    .box img{
+        height: 250px;
+        width: 250px;
+    }
+}
